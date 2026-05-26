@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- 输出区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="模型输出"
+            android:textSize="16sp"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- 输入区域 -->
+    <EditText
+        android:id="@+id/inputEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入问题"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <!-- 发送按钮 -->
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
